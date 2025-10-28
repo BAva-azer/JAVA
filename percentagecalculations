@@ -1,0 +1,21 @@
+     import java.util.*;
+     public class main{
+        public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("purchase amount");
+        int amt=sc.nextInt();
+        if (amt>=5000)
+
+        {double c =amt-((0.2)*amt);
+            System.out.println("20% is applicable : "+c);
+        }
+        else if
+            (amt>=2000){
+                double d=amt-((0.1)*amt);
+            System.out.println("10% discount : "+d);
+            }
+        else
+            System.out.println("no discount");    
+
+    }
+}
