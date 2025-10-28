@@ -1,0 +1,24 @@
+import java.util.*;
+    public class main{
+        public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("signl colour");
+        String colour=sc.next().toLowerCase();
+        if
+           (colour.equals("red")){
+                         System.out.print("stop");
+        }
+        else if
+            (colour.equals("yellow"))   {
+                         System.out.print("ready"); 
+
+        }
+        else if 
+            (colour.equals("green"))          { 
+                          System.out.print("go");
+    }
+    else 
+         System.out.print("invalid input input should be (red,green,yellow)");
+}
+  }
+  
