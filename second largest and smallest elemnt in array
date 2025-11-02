@@ -1,0 +1,49 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class main {
+
+      public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+            int size = sc.nextInt();
+            int[] arr = new int[size];
+            for(int i = 0;i<size;i++){
+                  arr[i] = sc.nextInt();
+      }
+      System.out.println("arrays : "+Arrays.toString(arr));
+      int largest = Integer.MIN_VALUE;
+      int secondlargest = Integer.MIN_VALUE;
+      int smallest = Integer.MAX_VALUE;
+      int secondsmallest = Integer.MAX_VALUE;
+      for(int i:arr){
+            if(i>largest){
+                  secondlargest=largest;
+                  largest = i;
+            }
+            else if (i>secondlargest && i!=largest){
+                  secondlargest=i;}
+            if(i<smallest){
+                  secondsmallest=smallest;
+                  smallest=i;}
+            else if (i<secondsmallest && i!=smallest){
+                  secondsmallest=i;}
+            
+
+}if(secondlargest==Integer.MIN_VALUE){
+      System.out.println("no secondlargest element ");}
+      else{
+            System.out.println("largest element : "+largest);
+            System.out.println("second largest elemet : "+secondlargest);}
+if(secondsmallest==Integer.MAX_VALUE){
+      System.out.println("no secondsmallest element ");}
+      else{
+            System.out.println("smallest element : "+smallest);
+            System.out.println("second smallest elemet : "+secondsmallest);}
+
+}
+
+}
+
+
+
+
